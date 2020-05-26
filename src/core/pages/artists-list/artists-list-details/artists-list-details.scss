@@ -1,0 +1,26 @@
+@import "../../../../shared//variables";
+
+.artists-list-details {
+  height: 40vh;
+  padding: 15vh 10vw 5vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &__subtitle {
+    font-weight: 200;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+  }
+
+  &__breadcrumb {
+    display: inline;
+    color: $color_grey;
+
+    &__breadcrumb-item {
+      text-decoration: none;
+    }
+  }
+}

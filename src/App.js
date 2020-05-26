@@ -1,11 +1,17 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import Layout from "./core/layout/layout";
+import Pages from "./core/pages/pages";
 
 function App() {
   return (
-    <div className="App">
-       <h1>SpotiSearch</h1>
-    </div>
+    <Router>
+      <Layout>
+        <Pages />
+      </Layout>
+    </Router>
   );
 }
 

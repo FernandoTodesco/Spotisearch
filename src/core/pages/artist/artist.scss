@@ -1,0 +1,5 @@
+@import "../../../shared/variables";
+
+.artist {
+  @include background($color_blue-secondary);
+}

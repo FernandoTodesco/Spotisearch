@@ -1,0 +1,24 @@
+@import "../../shared/variables";
+
+.breadcrumb {
+  transform: capitalize;
+
+  &__item {
+    text-decoration: none;
+    color: $color_grey;
+
+    &:not(:last-of-type)::after {
+      content: "\203a";
+      margin: 0 5px;
+      color: $color_grey;
+    }
+
+    &:last-of-type {
+      color: $color_white;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

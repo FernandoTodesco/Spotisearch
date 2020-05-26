@@ -1,0 +1,5 @@
+@import "../../../shared/variables";
+
+.home {
+  @include background($color_green-secondary);
+}

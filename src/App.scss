@@ -1,0 +1,14 @@
+@import "./shared/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: $font_principal;
+}
+
+a {
+  text-decoration: none;
+  color: $color_white;
+}

@@ -1,0 +1,21 @@
+@import "../../../../shared//variables";
+
+.home-details {
+  height: 40vh;
+  padding: 15vh 10vw 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &__subtitle {
+    font-weight: 200;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+  }
+
+  &__content {
+    color: $color_grey;
+  }
+}

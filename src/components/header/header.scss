@@ -1,0 +1,14 @@
+@import "../../shared/variables";
+
+.header {
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  @include flex(center, center);
+
+  &__logo {
+    height: 5vh;
+    width: auto;
+  }
+}

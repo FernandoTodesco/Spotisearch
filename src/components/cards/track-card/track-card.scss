@@ -1,0 +1,22 @@
+@import "../../../shared//variables";
+
+.track-card {
+  width: 280px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0 5vw;
+  @include flex(space-between, center);
+  background-image: linear-gradient($color_pink-primary, $color_black);
+  flex-wrap: wrap;
+  color: $color_grey;
+
+  .track-card__title {
+    font-size: 1.1rem;
+  }
+
+  .track-card__star {
+    font-size: 0.9rem;
+    color: $color_grey;
+    justify-self: end;
+  }
+}

@@ -1,0 +1,5 @@
+@import "../../../shared/variables";
+
+.album {
+  @include background($color_pink-secondary);
+}

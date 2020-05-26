@@ -1,0 +1,7 @@
+@import "../../../../shared/variables";
+
+.album-results {
+  @include flex(center, center);
+  flex-direction: column;
+  padding: 0 0 15vh;
+}

@@ -1,0 +1,6 @@
+@import "../../../../shared/variables";
+
+.home-results {
+  width: 100vw;
+  @include flex(center, center);
+}
