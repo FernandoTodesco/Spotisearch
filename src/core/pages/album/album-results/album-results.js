@@ -8,7 +8,6 @@ const AlbumResults = () => {
   const {
     tracksState: [tracks],
   } = useContext(AppContext);
-  console.log("tracks en album results: ", tracks);
 
   return (
     <div className="album-results">

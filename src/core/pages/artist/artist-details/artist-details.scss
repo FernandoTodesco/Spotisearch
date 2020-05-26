@@ -4,8 +4,8 @@
   height: 40vh;
   width: 100vw;
   padding: 15vh 10vw 5vh;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
 
   &__img {
@@ -15,7 +15,7 @@
   }
 
   &__container {
-    @include flex(space-evenly, space-between);
+    @include flex(space-evenly, start);
     flex-direction: column;
     &--subtitle {
       font-weight: 200;

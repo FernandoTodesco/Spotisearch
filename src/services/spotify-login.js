@@ -10,7 +10,6 @@ const SpotifyLogin = () => {
     const access_token = currentUrl
       ? currentUrl.split("&")[0].split("=")[1]
       : null;
-    console.log(access_token);
     access_token ? setToken(access_token) : auth();
   }, []);
 

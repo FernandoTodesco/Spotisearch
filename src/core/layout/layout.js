@@ -6,11 +6,9 @@ import { AppProvider } from "../../contexts/app-context";
 function Layout({ children }) {
   return (
     <div className="app">
-      <div className="app__container">
-        <AppProvider>
-          {children}
-        </AppProvider>
-      </div>
+      <AppProvider>
+        {children}
+      </AppProvider>
     </div>
   );
 }

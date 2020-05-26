@@ -23,7 +23,9 @@ const ArtistsListDetails = () => {
       <h4 className="artists-list-details__subtitle">
         You are currently searching for "{query}"
       </h4>
-      <Breadcrumb breadcrumbs={breadcrumbs} />
+      <div id="artists-list__breadcrumbs">
+        <Breadcrumb breadcrumbs={breadcrumbs} />
+      </div>
     </section>
   );
 };

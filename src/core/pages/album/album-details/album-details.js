@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import "./album-details.scss";
+import moment from "moment";
 
 const AlbumDetails = ({ album }) => {
+  const year = moment(album.release_date).format("YYYY");
   let loading = album && album.images ? false : true;
   useEffect(() => {}, [loading]);
 
@@ -27,7 +29,7 @@ const AlbumDetails = ({ album }) => {
         <h1 className="album-details__container--title">{album.name}</h1>
         {album.artists.length > 0 && (
           <span className="album-details__container--subtitle">
-            {album.artists[0].name}-{album.release_date}
+            {album.artists[0].name} - {year}
           </span>
         )}
       </div>

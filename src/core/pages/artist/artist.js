@@ -19,8 +19,6 @@ const Artist = (props) => {
     breadcrumbsState: [breadcrumbs, setBreadcrumbs],
   } = useContext(AppContext);
 
-  console.log(props.match);
-
   useEffect(() => {
     const fetchArtist = async () => {
       const result = await getArtist(props.match.params.id, token);

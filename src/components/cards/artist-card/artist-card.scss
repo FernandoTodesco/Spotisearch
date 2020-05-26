@@ -1,26 +1,29 @@
-@import '../../../shared//variables';
+@import "../../../shared//variables";
 
 .card {
-    width: 280px;
-    height: 100px;
-    border-radius: 10px;
-    padding: 0 5vw;
-    @include flex(start, center);
-    background-image: linear-gradient($color_green-primary, $color_black);
-    flex-wrap: wrap;
-    flex-direction: row;
+  width: 280px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 0 5vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 
-    &__img-container {
-        @include flex(center, center);
-        
-        &__img {
-            max-width: 150px;
-            max-height: 80px;
-            box-shadow: 1px 1px 10px rgba($color: $color_black, $alpha: 0.5);
-        }
+  background-image: linear-gradient($color_green-primary, $color_black);
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  &__img-container {
+    @include flex(center, center);
+
+    &__img {
+      max-width: 150px;
+      max-height: 80px;
+      box-shadow: 1px 1px 10px rgba($color: $color_black, $alpha: 0.5);
     }
-    
-    &__title-container {
-        padding: 0 0 0 5vw;
-    }
+  }
+
+  &__title-container {
+    @include flex(flex-start, center);
+    padding: 0 0 0 5vw;
+  }
 }

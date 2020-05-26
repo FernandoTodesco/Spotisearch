@@ -2,5 +2,7 @@
 
 .home-results {
   width: 100vw;
-  @include flex(center, center);
+  height: 55vh;
+  @include flex(center, start);
+  padding: 5vh 10vw 15vh;
 }

@@ -23,9 +23,19 @@ const SearchBar = ({ props }) => {
     setArtists(result.artists.items);
   };
 
+  const inputStyle = {
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/lens.png)`,
+  };
+
   return (
     <form onSubmit={search}>
-      <input type="text" onChange={updateQuery} />
+      <input
+        className="searchBar"
+        type="text"
+        onChange={updateQuery}
+        placeholder="Search for Artists.."
+        style={inputStyle}
+      />
     </form>
   );
 };

@@ -10,13 +10,19 @@
   flex-wrap: wrap;
   color: $color_grey;
 
-  .track-card__title {
+  .track-card__title-container {
     font-size: 1.1rem;
+    @include flex(start, center);
+    flex-grow: 1;
+
+    .track-card__title {
+      padding: 0 2vh;
+      overflow: hidden;
+    }
   }
 
   .track-card__star {
     font-size: 0.9rem;
     color: $color_grey;
-    justify-self: end;
   }
 }

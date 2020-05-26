@@ -20,8 +20,6 @@ const Album = (props) => {
     breadcrumbsState: [breadcrumbs, setBreadcrumbs],
   } = useContext(AppContext);
 
-  console.log(props.match);
-
   useEffect(() => {
     const fetchAlbum = async () => {
       const result = await getAlbum(props.match.params.id, token);
@@ -43,9 +41,6 @@ const Album = (props) => {
     };
     fetchAlbumTracks();
   }, []);
-
-  console.log("album fuera: ", album);
-  console.log("tracks fuera: ", tracks);
 
   return (
     <div className="album">

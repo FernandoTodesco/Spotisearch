@@ -1,11 +1,12 @@
 import React from "react";
 import "./album-card.scss";
+import moment from "moment";
 
 const AlbumCard = ({ album }) => {
-  const handleClick = () => console.log("card clicked");
+  const year = moment(album.release_date).format("YYYY");
 
   return (
-    <div className="album-card" onClick={handleClick}>
+    <div className="album-card">
       <div className="album-card__img-container">
         {album.images.length > 0 ? (
           <img
@@ -23,7 +24,7 @@ const AlbumCard = ({ album }) => {
       </div>
       <div className="album-card__title-container">
         <p className="album-card__title">{album.name}</p>
-        <span className="album-card__subtitle">{album.release_date}</span>
+        <span className="album-card__subtitle">{year}</span>
       </div>
     </div>
   );

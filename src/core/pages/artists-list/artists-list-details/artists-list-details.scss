@@ -1,7 +1,7 @@
 @import "../../../../shared//variables";
 
 .artists-list-details {
-  height: 40vh;
+  height: 45vh;
   padding: 15vh 10vw 5vh;
   display: flex;
   justify-content: space-between;
@@ -15,12 +15,7 @@
     font-size: 2.5rem;
   }
 
-  &__breadcrumb {
-    display: inline;
-    color: $color_grey;
-
-    &__breadcrumb-item {
-      text-decoration: none;
-    }
+  #artists-list__breadcrumbs {
+    transform: translateX(-10vw);
   }
 }

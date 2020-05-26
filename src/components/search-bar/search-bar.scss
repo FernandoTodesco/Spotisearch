@@ -1,0 +1,16 @@
+@import "../../shared/variables";
+
+.searchBar {
+  width: 80vw;
+  height: 5vh;
+  border-radius: 3vh;
+  padding: 0 5vw 0 13vw;
+  color: $color_grey;
+  background-size: 25px;
+  background-position: 4vw;
+  background-repeat: no-repeat;
+
+  &:focus {
+    outline: none;
+  }
+}
