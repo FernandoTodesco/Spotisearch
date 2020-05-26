@@ -9,7 +9,7 @@ import Footer from "../../../components/footer/footer";
 const ArtistsList = (props) => {
   return (
     <div className="artists-list">
-      <Header theme="green" />
+      <Header props={props} theme="green" />
       <ArtistsListDetails props={props} />
       <ArtistsListResults />
       <Footer theme="green" />

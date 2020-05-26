@@ -46,7 +46,7 @@ const Album = (props) => {
 
   return (
     <div className="album">
-      <Header theme="pink" />
+      <Header props={props} theme="pink" />
       {searching && <Backdrop props={props} />}
       <AlbumDetails album={album} />
       <Breadcrumb breadcrumbs={breadcrumbs} />

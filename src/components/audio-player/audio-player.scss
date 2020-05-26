@@ -1,9 +1,13 @@
 @import "../../shared/variables";
 
-.controls {
-  display: flex;
-  align-self: center;
-  width: 60px;
-  height: 25px;
-  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(85%);
+.audio-player {
+  @include flex(center, center);
+
+  .controls {
+    display: flex;
+    align-self: center;
+    width: 60px;
+    height: 25px;
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(85%);
+  }
 }

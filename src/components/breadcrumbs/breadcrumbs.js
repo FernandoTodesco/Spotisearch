@@ -7,9 +7,9 @@ const Breadcrumbs = ({ breadcrumbs }) => {
     <div className="breadcrumb">
       {breadcrumbs.map((breadcrumb) => (
         <Link
+          key={breadcrumb.path}
           className="breadcrumb__item"
           to={`${breadcrumb.path}`}
-          key={breadcrumb.path}
         >
           <span>{breadcrumb.name}</span>
         </Link>

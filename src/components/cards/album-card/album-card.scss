@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-image: linear-gradient($color_blue, $color_black);
+  margin: 1vh 0;
 
   &__img-container {
     @include flex(center, center);

@@ -41,7 +41,7 @@ const Artist = (props) => {
 
   return (
     <div className="artist">
-      <Header theme="blue" />
+      <Header props={props} theme="blue" />
       {searching && <Backdrop props={props} />}
       <ArtistDetails artist={artist} breadcrumbs={breadcrumbs} />
       <Breadcrumb breadcrumbs={breadcrumbs} />

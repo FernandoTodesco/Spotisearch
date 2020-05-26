@@ -5,3 +5,26 @@
   flex-direction: column;
   padding: 0 0 15vh;
 }
+
+@media only screen and (min-width: $md_vw) {
+  .artists-list-results {
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 3vw 15vh;
+  }
+}
+
+@media only screen and (min-width: $lg_vw) {
+  .artists-list-results {
+    justify-content: space-evenly;
+    padding: 0 10vw 15vh;
+  }
+}
+
+@media only screen and (min-width: $lg_vw) {
+  .artists-list-results {
+    padding: 0 20vw 15vh;
+  }
+}

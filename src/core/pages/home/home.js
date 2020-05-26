@@ -13,7 +13,7 @@ const Home = (props) => {
 
   return (
     <div className="home">
-      <Header theme="green" />
+      <Header props={props} theme="green" />
       <HomeDetails />
       <HomeResults props={props} />
       <Footer theme="green" />

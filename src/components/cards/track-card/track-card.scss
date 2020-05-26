@@ -4,14 +4,14 @@
   width: 280px;
   height: 40px;
   border-radius: 10px;
-  padding: 0 5vw;
-  @include flex(space-between, center);
+  padding: 0 3vw;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   background-image: linear-gradient($color_pink-primary, $color_black);
-  flex-wrap: wrap;
   color: $color_grey;
 
   .track-card__title-container {
-    font-size: 1.1rem;
+    font-size: 1rem;
     @include flex(start, center);
     flex-grow: 1;
 
@@ -19,10 +19,5 @@
       padding: 0 2vh;
       overflow: hidden;
     }
-  }
-
-  .track-card__star {
-    font-size: 0.9rem;
-    color: $color_grey;
   }
 }

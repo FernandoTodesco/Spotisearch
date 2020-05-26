@@ -2,9 +2,10 @@ import React, { useContext } from "react";
 import "./header.scss";
 import { Link } from "react-router-dom";
 import SearchBurger from "../search-burger/search-burger";
+import SearchBar from "../search-bar/search-bar";
 import AppContext from "../../contexts/app-context";
 
-const Header = ({ theme }) => {
+const Header = ({ props, theme }) => {
   const {
     searchingState: [searching, setSearching],
   } = useContext(AppContext);
@@ -22,6 +23,7 @@ const Header = ({ theme }) => {
           alt="logo"
         />
       </Link>
+      <SearchBar props={props} />
       <SearchBurger activate={activate} />
     </header>
   );

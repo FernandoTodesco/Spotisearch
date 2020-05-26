@@ -13,7 +13,7 @@ const ArtistResults = () => {
   return (
     <div className="artist-results">
       {albums.map((alb) => (
-        <Link to={`/album/${alb.id}`} key={alb.name}>
+        <Link to={`/album/${alb.id}`} key={alb.id}>
           <AlbumCard album={alb} />
         </Link>
       ))}
