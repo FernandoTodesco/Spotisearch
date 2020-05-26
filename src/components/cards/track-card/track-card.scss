@@ -9,15 +9,23 @@
   grid-template-columns: 3fr 1fr;
   background-image: linear-gradient($color_pink-primary, $color_black);
   color: $color_grey;
-
+  
   .track-card__title-container {
     font-size: 1rem;
     @include flex(start, center);
     flex-grow: 1;
-
+    
     .track-card__title {
       padding: 0 2vh;
       overflow: hidden;
     }
+  }
+}
+
+@media only screen and (min-width: $lg_vw) {
+  .track-card {
+    width: 500px;
+    height: 40px;
+    margin: 1px 0;
   }
 }

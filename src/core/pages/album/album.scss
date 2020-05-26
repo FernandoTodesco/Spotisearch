@@ -3,3 +3,11 @@
 .album {
   @include background($color_pink-secondary);
 }
+
+@media only screen and (min-width: $lg_vw) {
+  .album {
+    .breadcrumb {
+      padding: 5vh 30vw;
+    }
+  }
+}

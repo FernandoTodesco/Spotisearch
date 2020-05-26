@@ -6,16 +6,22 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-
+  
   &__subtitle {
     font-weight: 200;
   }
-
+  
   &__title {
     font-size: 2.5rem;
   }
-
+  
   #artists-list__breadcrumbs {
     transform: translateX(-10vw);
+  }
+}
+
+@media only screen and (min-width: $lg_vw) {
+  .artists-list-details {
+    padding: 15vh 20vw 5vh;
   }
 }

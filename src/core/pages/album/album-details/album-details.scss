@@ -36,3 +36,14 @@
     }
   }
 }
+
+@media only screen and (min-width: $lg_vw) {
+  .album-details {
+    padding: 15vh 30vw 5vh;
+
+    &__img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
+}

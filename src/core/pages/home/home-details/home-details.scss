@@ -6,16 +6,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
+  
   &__subtitle {
     font-weight: 200;
   }
-
+  
   &__title {
     font-size: 2.5rem;
   }
-
+  
   &__content {
     color: $color_grey;
+  }
+}
+
+@media only screen and (min-width: $lg_vw) {
+  .home-details {
+    height: 45vh;
+    padding: 15vh 20vw 5vh;
   }
 }

@@ -9,8 +9,17 @@
   background-size: 25px;
   background-position: 4vw;
   background-repeat: no-repeat;
-
+  
   &:focus {
     outline: none;
   }
+}
+
+@media only screen and (min-width: $lg_vw) {
+  .searchBar {
+    width: 60vw;
+    background-position: 2vw;
+    padding: 0 5vw 0 5vw;
+  }
+  
 }

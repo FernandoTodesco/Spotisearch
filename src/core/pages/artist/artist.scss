@@ -3,3 +3,11 @@
 .artist {
   @include background($color_blue-secondary);
 }
+
+@media only screen and (min-width: $lg_vw) {
+  .artist {
+    .breadcrumb {
+      padding: 5vh 30vw;
+    }
+  }
+}
