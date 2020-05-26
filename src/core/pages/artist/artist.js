@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import "./artist.scss";
 
 import Header from "../../../components/header/header";
+import Backdrop from "../../../components/backdrop/backdrop";
 import ArtistDetails from "./artist-details/artist-details";
 import Breadcrumb from "../../../components/breadcrumbs/breadcrumbs";
 import ArtistResults from "./artist-results/artist-results";
@@ -17,6 +18,7 @@ const Artist = (props) => {
     artistState: [artist, setArtist],
     albumsState: [albums, setAlbums],
     breadcrumbsState: [breadcrumbs, setBreadcrumbs],
+    searchingState: [searching, setSearching],
   } = useContext(AppContext);
 
   useEffect(() => {
@@ -40,6 +42,7 @@ const Artist = (props) => {
   return (
     <div className="artist">
       <Header theme="blue" />
+      {searching && <Backdrop props={props} />}
       <ArtistDetails artist={artist} breadcrumbs={breadcrumbs} />
       <Breadcrumb breadcrumbs={breadcrumbs} />
       <ArtistResults />

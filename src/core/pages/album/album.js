@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import "./album.scss";
 
 import Header from "../../../components/header/header";
+import Backdrop from "../../../components/backdrop/backdrop";
 import AlbumDetails from "./album-details/album-details";
 import Breadcrumb from "../../../components/breadcrumbs/breadcrumbs";
 import AlbumResults from "./album-results/album-results";
@@ -18,6 +19,7 @@ const Album = (props) => {
     albumState: [album, setAlbum],
     tracksState: [tracks, setTracks],
     breadcrumbsState: [breadcrumbs, setBreadcrumbs],
+    searchingState: [searching, setSearching],
   } = useContext(AppContext);
 
   useEffect(() => {
@@ -45,6 +47,7 @@ const Album = (props) => {
   return (
     <div className="album">
       <Header theme="pink" />
+      {searching && <Backdrop props={props} />}
       <AlbumDetails album={album} />
       <Breadcrumb breadcrumbs={breadcrumbs} />
       <AlbumResults />

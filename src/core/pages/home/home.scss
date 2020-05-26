@@ -2,4 +2,10 @@
 
 .home {
   @include background($color_green-secondary);
+  .header {
+    @include flex(center, center);
+    .search-burger {
+      display: none;
+    }
+  }
 }

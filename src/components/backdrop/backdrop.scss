@@ -1,0 +1,14 @@
+@import "../../shared/variables";
+
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 20vh;
+  top: 0;
+  left: 0;
+  background: rgba($color: $color_black, $alpha: 0.8);
+  box-shadow: 1px 1px 10px rgba($color: $color_black, $alpha: 0.4);
+  z-index: 100;
+  padding: 10vh 0 0 0;
+  @include flex(center, center);
+}

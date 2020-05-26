@@ -4,8 +4,9 @@
   height: 10vh;
   width: 100vw;
   position: fixed;
-  z-index: 1;
-  @include flex(center, center);
+  z-index: 200;
+  padding: 0 10vw;
+  @include flex(space-between, center);
 
   &__logo {
     height: 5vh;

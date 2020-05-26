@@ -12,6 +12,7 @@ export const AppProvider = ({ children }) => {
   const [tracks, setTracks] = useState([]);
   const [query, setQuery] = useState("");
   const [breadcrumbs, setBreadcrumbs] = useState(["Home"]);
+  const [searching, setSearching] = useState(false);
 
   const returnValue = {
     tokenState: [token, setToken],
@@ -23,6 +24,7 @@ export const AppProvider = ({ children }) => {
     tracksState: [tracks, setTracks],
     queryState: [query, setQuery],
     breadcrumbsState: [breadcrumbs, setBreadcrumbs],
+    searchingState: [searching, setSearching],
   };
 
   return (

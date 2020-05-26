@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./header.scss";
 import { Link } from "react-router-dom";
+import SearchBurger from "../search-burger/search-burger";
+import AppContext from "../../contexts/app-context";
 
-function Header({ theme }) {
+const Header = ({ theme }) => {
+  const {
+    searchingState: [searching, setSearching],
+  } = useContext(AppContext);
+
+  const activate = () => {
+    setSearching(!searching);
+  };
+
   return (
     <header className={`header ${theme}`}>
       <Link to="/">
@@ -12,8 +22,9 @@ function Header({ theme }) {
           alt="logo"
         />
       </Link>
+      <SearchBurger activate={activate} />
     </header>
   );
-}
+};
 
 export default Header;
